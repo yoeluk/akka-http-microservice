@@ -1,4 +1,5 @@
 enablePlugins(JavaAppPackaging)
+enablePlugins(SonarRunnerPlugin)
 
 name := "akka-http-microservice"
 organization := "com.theiterators"
