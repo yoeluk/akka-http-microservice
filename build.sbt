@@ -8,6 +8,10 @@ scalaVersion := "2.12.6"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
+sonarProperties ++= Map(
+      "sonar.host.url" -> "http://sonarqube:9000"
+    )
+
 libraryDependencies ++= {
   val akkaV       = "2.5.16"
   val akkaHttpV   = "10.1.4"
