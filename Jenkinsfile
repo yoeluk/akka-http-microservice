@@ -7,7 +7,7 @@ agent {
 stages {
     stage('Build App') {
     steps {
-        git branch: 'master', url: 'https://github.com/gnunn1/akka-http-microservice'
+        git branch: 'master', url: 'https://github.com/yoeluk/akka-http-microservice'
         sh "${sbtCmd} assembly"
     }
     }
