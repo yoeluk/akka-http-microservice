@@ -2,7 +2,7 @@ def sbtCmd = "sbt"
 
 pipeline {
 agent {
-    label 'sbt'
+    label 'master'
 }
 stages {
     stage('Build App') {
