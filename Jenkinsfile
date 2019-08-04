@@ -16,7 +16,7 @@ stages {
         script {
         openshift.withCluster() {
             openshift.withProject(env.DEV_PROJECT) {
-            openshift.selector("bc", "scala-example").startBuild("--from-file=target/scala-2.12/akka-http-microservice-assembly-1.0.jar", "--wait=true")
+            openshift.selector("bc", "sbt-example").startBuild("--from-file=target/scala-2.12/akka-http-microservice-assembly-1.0.jar", "--wait=true")
             }
         }
         }
