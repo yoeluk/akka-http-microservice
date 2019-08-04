@@ -4,7 +4,7 @@ enablePlugins(SonarRunnerPlugin)
 name := "akka-http-microservice"
 organization := "com.theiterators"
 version := "1.0"
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.8"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
